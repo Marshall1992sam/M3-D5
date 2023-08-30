@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.3/ionicons.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>M3-D5_D6</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"
+        ><img src="assets/logo.svg" alt="Logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Home
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Link
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Disabled
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <a href="#">
+          <div class="sfondo-icona">
+            <ion-icon
+              id="campana"
+              name="notifications-outline"
+              style="font-size: 60px"
+            ></ion-icon>
+          </div>
+        </a>
+        <a href="#">
+          <div class="img-icona">
+            <img
+              src="assets/IMG/avatar-1.jpg"
+              alt="Image 2"
+              width="60"
+              height="60"
+              class="rounded-circle"
+            />
+          </div>
+        </a>
+      </div>
+    </nav>
+
+    <!--JUMBOTRON-->
+    <div class="contenitore">
+      <div class="jumbotron">
+        <img
+          src="assets/IMG/hero-img.png"
+          alt="Image"
+          class="jumbotron-image"
+        />
+        <div class="jumbotron-content">
+          <h1>Welcome Dev Students!</h1>
+          <p>
+            Hand-picked Instructor and expertly crafted courses, designed for
+            the modern students and entrepreneur.
+          </p>
+          <div class="jumbotron-buttons">
+            <button class="btn-green">Browse Courses</button>
+            <button class="btn-white">Are You Instructor?</button>
+          </div>
+        </div>
+      </div>
+
+      <!--ICONE-->
+
+      <section class="icon-section">
+        <div class="icon-wrapper">
+          <div class="sfondo-icona-ocra">
+            <ion-icon
+              name="videocam-outline"
+              style="font-size: 30px"
+            ></ion-icon>
+          </div>
+          <div class="icon-text">
+            <h3>30,000 online courses</h3>
+            <p>Enjoy a variety of fresh topics</p>
+          </div>
+        </div>
+        <div class="icon-wrapper">
+          <div class="sfondo-icona-ocra">
+            <ion-icon name="people-outline" style="font-size: 30px"></ion-icon>
+          </div>
+          <div class="icon-text">
+            <h3>Expert instruction</h3>
+            <p>Find the right instruction for you</p>
+          </div>
+        </div>
+        <div class="icon-wrapper">
+          <div class="sfondo-icona-ocra">
+            <ion-icon name="time-outline" style="font-size: 30px"></ion-icon>
+          </div>
+          <div class="icon-text">
+            <h3>Lifetime access</h3>
+            <p>Learn on your schedule</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--CAROSELLO-->
+    <div class="container mt-5">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <!-- Prima card -->
+                <div class="col-md-3">
+                  <div class="card">
+                    <img src="assets/IMG/course-angular.jpg" alt="" />
+                    <div class="card-body">
+                      <h5 class="card-title">GraphQL: introduction to graphQL for beginner</h5>
+                      <p class="card-text">
+                        <div class="clock-wrapper">
+                          <span class="clock-icon">
+                            <ion-icon name="time-outline"></ion-icon>
+                          </span>
+                          <div class="clock-info">
+                            <span class="clock-time">2h 40m</span>
+                            <div class="clock-ticks">
+                              <span class="tick"></span>
+                              <span class="tick"></span>
+                              <span class="tick"></span>
+                            </div>
+                            <span class="clock-advanced">Advanced</span>
+                          </div>
+                        </div>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              <!-- Seconda card -->
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="assets/IMG/course-css.jpg" alt="" />
+                  <div class="card-body">
+                    <h5 class="card-title">GraphQL: introduction to graphQL for beginner</h5>
+                    <p class="card-text">
+                      <div class="clock-wrapper">
+                        <span class="clock-icon">
+                          <ion-icon name="time-outline"></ion-icon>
+                        </span>
+                        <div class="clock-info">
+                          <span class="clock-time">2h 40m</span>
+                          <div class="clock-ticks">
+                            <span class="tick"></span>
+                            <span class="tick"></span>
+                            <span class="tick"></span>
+                          </div>
+                          <span class="clock-advanced">Advanced</span>
+                        </div>
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Terza card -->
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="assets/IMG/course-gatsby.jpg" alt="" />
+                  <div class="card-body">
+                    <h5 class="card-title">GraphQL: introduction to graphQL for beginner</h5>
+                    <p class="card-text">
+                      <div class="clock-wrapper">
+                        <span class="clock-icon">
+                          <ion-icon name="time-outline"></ion-icon>
+                        </span>
+                        <div class="clock-info">
+                          <span class="clock-time">2h 40m</span>
+                          <div class="clock-ticks">
+                            <span class="tick"></span>
+                            <span class="tick"></span>
+                            <span class="tick"></span>
+                          </div>
+                          <span class="clock-advanced">Advanced</span>
+                        </div>
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Quarta card -->
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="assets/IMG/course-graphql.jpg" alt="" />
+                  <div class="card-body">
+                    <h5 class="card-title">GraphQL: introduction to graphQL for beginner</h5>
+                    <p class="card-text">
+                      <div class="clock-wrapper">
+                        <span class="clock-icon">
+                          <ion-icon name="time-outline"></ion-icon>
+                        </span>
+                        <div class="clock-info">
+                          <span class="clock-time">2h 40m</span>
+                          <div class="clock-ticks">
+                            <span class="tick"></span>
+                            <span class="tick"></span>
+                            <span class="tick"></span>
+                          </div>
+                          <span class="clock-advanced">Advanced</span>
+                        </div>
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <!-- Quinta card -->
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="assets/IMG/course-html.jpg" alt="" />
+                  <div class="card-body">
+                    <h5 class="card-title">GraphQL: introduction to graphQL for beginner</h5>
+                    <p class="card-text">
+                      <div class="clock-wrapper">
+                        <span class="clock-icon">
+                          <ion-icon name="time-outline"></ion-icon>
+                        </span>
+                        <div class="clock-info">
+                          <span class="clock-time">2h 40m</span>
+                          <div class="clock-ticks">
+                            <span class="tick"></span>
+                            <span class="tick"></span>
+                            <span class="tick"></span>
+                          </div>
+                          <span class="clock-advanced">Advanced</span>
+                        </div>
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Sesta card -->
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="assets/IMG/course-javascript.jpg" alt="" />
+                  <div class="card-body">
+                    <h5 class="card-title">GraphQL: introduction to graphQL for beginner</h5>
+                    <p class="card-text">
+                      <div class="clock-wrapper">
+                        <span class="clock-icon">
+                          <ion-icon name="time-outline"></ion-icon>
+                        </span>
+                        <div class="clock-info">
+                          <span class="clock-time">2h 40m</span>
+                          <div class="clock-ticks">
+                            <span class="tick"></span>
+                            <span class="tick"></span>
+                            <span class="tick"></span>
+                          </div>
+                          <span class="clock-advanced">Advanced</span>
+                        </div>
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--Settima Card-->
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="assets/IMG/course-laravel.jpg" alt="" />
+                  <div class="card-body">
+                    <h5 class="card-title">GraphQL: introduction to graphQL for beginner</h5>
+                    <p class="card-text">
+                      <div class="clock-wrapper">
+                        <span class="clock-icon">
+                          <ion-icon name="time-outline"></ion-icon>
+                        </span>
+                        <div class="clock-info">
+                          <span class="clock-time">2h 40m</span>
+                          <div class="clock-ticks">
+                            <span class="tick"></span>
+                            <span class="tick"></span>
+                            <span class="tick"></span>
+                          </div>
+                          <span class="clock-advanced">Advanced</span>
+                        </div>
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--Ottava Card-->
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="assets/IMG/course-python.jpg" alt="" />
+                  <div class="card-body">
+                    <h5 class="card-title">GraphQL: introduction to graphQL for beginner</h5>
+                    <p class="card-text">
+                      <div class="clock-wrapper">
+                        <span class="clock-icon">
+                          <ion-icon name="time-outline"></ion-icon>
+                        </span>
+                        <div class="clock-info">
+                          <span class="clock-time">2h 40m</span>
+                          <div class="clock-ticks">
+                            <span class="tick"></span>
+                            <span class="tick"></span>
+                            <span class="tick"></span>
+                          </div>
+                          <span class="clock-advanced">Advanced</span>
+                        </div>
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+           </div>
+          </div>
+         </div>
+        <!-- Frecce del carosello -->
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <div class="carousel-arrow">
+            <span class="carousel-arrow-icon">
+              <ion-icon name="chevron-back-outline" style="font-size: 18px; color: #333;"></ion-icon>
+            </span>
+          </div>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <div class="carousel-arrow">
+            <span class="carousel-arrow-icon">
+              <ion-icon name="chevron-forward-outline" style="font-size: 18px; color: #333;"></ion-icon>
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+  </body>
+</html>
